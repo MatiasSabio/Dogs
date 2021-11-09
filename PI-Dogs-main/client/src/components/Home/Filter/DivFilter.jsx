@@ -31,7 +31,7 @@ function submit (){
         setAlpha('Alphabetic'),
         setWeight('Weight'),
         setTemperament([])
-}
+} 
 // const [btnf,setBtnf]= useState({});
 var fixed = function(name){
     return temperamentFilter.includes(name)         
