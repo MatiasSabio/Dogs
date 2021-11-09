@@ -1,0 +1,35 @@
+.div{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-around;
+    align-content: space-around;
+   
+}
+.card{
+    width:300px;
+    height: 400px;
+    border: 1px solid var(--shadow);
+    margin-top: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    border:1px solid var(--pink);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+   

@@ -1,0 +1,47 @@
+.container{
+ height: 400px;   
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+.img{
+width: 280px;
+height: 200px;
+}
+.name{
+    font-family: var(--font-family-standar);
+    font-size: 20px;
+    font-weight: bold;
+    grid-row: 1/2;
+    /* justify-content: start;
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: start;
+    justify-items: start;
+    justify-self: start; */
+}
+.container:hover > h3{
+    color: var(--pink);
+}
+.weight{
+    font-family: var(--font-family-standar);
+    font-size: 18px;
+    padding-top: 0px;
+}
+.divPills{
+    display: grid;    
+    grid-template-columns: auto auto auto;
+    margin-bottom: 15px;
+}
+.pills{  
+    height: 20px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    border:1px solid var(--pills-base);
+    color: var(--pills-base);
+    font-family: var(--font-family-standar);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}

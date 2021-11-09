@@ -1,0 +1,75 @@
+.divContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 10% auto auto 10% ;
+  grid-template-rows: auto auto auto auto;
+  background-color: var(--backgound-app-color);
+  justify-content: space-around;
+  align-content: space-around;
+  
+}
+
+.FormContainer {
+  grid-column: 2/4;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: grid;
+  grid-template-rows:auto auto 430px;
+  margin-bottom: 20px;
+
+}
+.navBar{
+  background-color: var(--color-font-white);
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  height: 40px;
+}
+.home{
+  background-color: var(--pink);
+  text-decoration: none;
+  color:black;
+  border: none;
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 30px;
+  padding-right: 10px;
+  border-radius:0 20px 20px 0  ;
+  -webkit-border-radius:0 20px 20px 0  ;
+  -moz-border-radius:0 20px 20px 0  ;
+  -ms-border-radius:0 20px 20px 0  ;
+  -o-border-radius:0 20px 20px 0  ;
+  padding-left: 5px;
+  padding-right: 10px;
+  align-self: center;
+}
+.home:hover{
+  background-color: black;
+  color:var(--pink) ;
+}
+.about{
+  background-color: var(--pink);
+  text-decoration: none;
+  color:black;
+  padding-left: 15px;
+  font-size: 30px;
+  padding-right: 10px;
+  border-right: solid 1px var(--color-font-white);
+  border-radius: 20px 0 0 20px;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
+  -ms-border-radius: 20px 0 0 20px;
+  -o-border-radius: 20px 0 0 20px;}
+.about:hover{
+  background-color: black;
+  color:var(--pink);
+}
+

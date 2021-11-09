@@ -24,7 +24,7 @@ const { apiKey } = process.env;
 
 // Syncing all the models at once.
 conn
-  .sync({ force: false })
+  .sync({ force: true })  
   .then(() => Temperament.findAll())
   .then((temperament) => {
     // console.log('1 -- temp DB', temperament);
@@ -35,7 +35,6 @@ conn
       axios
         .get(`https://api.thedogapi.com/v1/breeds?api_key=${apiKey}`)
         .then((tempAxios) => {
-          console.log('linea 36',tempAxios.data[1].temperament.split(", ") )
           tempAxios.data.forEach((dog) => {
             dogTemp = `${dog.temperament}`.split(", ");
             dogTemp.map((temp) => {             

@@ -1,8 +1,8 @@
-const { Dog } = require("../db");
+const { Dog , Temperament } = require("../db");
 const router = require("express").Router();
 
 router.post("/", (req, res, next) => {
-  const { name, weight, height, life_span, image, temperament } =
+  const { name, weight, height, life_span, image, temperaments } =
     req.body;
     Dog.create({   
     name,
@@ -12,7 +12,8 @@ router.post("/", (req, res, next) => {
     image,    
   })
     .then((NewDog) => {
-      return NewDog.addTemperament(temperament);
+      // return temperament.forEach(el=>NewDog.addTemperament({name:el}))
+      NewDog.addTemperament(temperaments)
     })
     .then((dogTemperament) => {
       res.json(dogTemperament);

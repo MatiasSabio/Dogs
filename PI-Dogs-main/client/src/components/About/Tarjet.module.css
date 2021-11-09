@@ -1,0 +1,105 @@
+.container{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 60% auto;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nameImg{
+    grid-column: 1/2; 
+    margin-right: 15px;
+    padding-right: 15px;   
+}
+.name{
+font-family: var(--font-family-standar);
+font-size: 35px;
+font-weight: bold;
+padding-left: 15px;
+}
+.img{
+    width: 400px;
+    height: 400px;
+    
+    background-color: var(--backgound-app-color);
+    border-radius: 20px;    
+    margin: 20px;
+}
+.title{
+    padding-top: 20px;
+    font-family: var(--font-family-standar);
+font-size: 25px;
+font-weight: bold;
+padding-left: 15px;
+color: var(--pink);
+}
+.skills{
+    font-family: var(--font-family-standar);
+font-size: 20px;
+color: black;
+}
+.spanPills{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+.pills{
+    border:1px solid var(--pink);
+    color: var(--pink);
+    padding:5px;
+    align-self: center;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.more{
+    width: 400px;
+    margin: 20px;
+    background-color: var(--color-font-white);
+    padding:10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: var(--font-family-standar);
+}
+.divContact{
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+}
+.contact{
+    font-family: var(--font-family-standar);
+    font-size: 20px;
+    color:black;
+}
+.Wpp{
+    font-family: var(--font-family-standar);
+    font-size: 20px;
+    color: var(--pills-base);
+}
+.num{
+    font-family: var(--font-family-standar);
+    font-size: 20px;
+    padding-left: 15px;
+    color:black
+}
+.link{
+    font-family: var(--font-family-standar);
+    font-size: 20px;
+    padding-left: 15px;
+    color:black;
+    text-decoration: none;
+}
+.link:hover{
+    color: var(--pink);
+}

@@ -1,0 +1,66 @@
+.container{
+    background-color: var(--color-font-white);
+    grid-column: 1/4;
+    grid-row: 1/2;    
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+.none{
+    text-decoration: none;
+    color:black
+}
+.home{
+    background-color: var(--pink);
+    border: none;
+    font-family: var(--font-family-title);
+    font-weight: bold;
+    font-size: 30px;
+    padding-right: 10px;
+    border-radius:0 20px 20px 0  ;
+    -webkit-border-radius:0 20px 20px 0  ;
+    -moz-border-radius:0 20px 20px 0  ;
+    -ms-border-radius:0 20px 20px 0  ;
+    -o-border-radius:0 20px 20px 0  ;
+   
+}
+.home:hover{
+    background-color: black;
+    color:var(--pink) ;
+}
+.addAbout{
+    font-family: var(--font-family-title);
+    font-size: 30px;
+    justify-content: space-between;
+}
+   
+.add{
+    background-color: var(--pink);
+    text-decoration: none;
+    color:black;
+    padding-left: 15px;
+    
+    padding-right: 10px;
+    /* border-right: solid 1px var(--color-font-white); */
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;}
+.add:hover{
+    background-color: black;
+    color:var(--pink);
+}
+.about{
+    background-color: var(--pink);
+    text-decoration: none;
+    color:black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: solid 1px var(--color-font-white);
+  
+}
+.about:hover{
+    background-color: black;
+    color:var(--pink); 
+}
